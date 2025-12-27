@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Dani Nahle</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico?v=100" />
         <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,12 +17,19 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <style>.card {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    }</style>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">DANI NAHLE</span></a>
+                    <a class="navbar-brand" href="index.html"><img src="assets/logo.png" width="50"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
@@ -47,7 +54,7 @@
                                 <h2 class="text-primary fw-bolder mb-0">Experience</h2>
                                 <!-- Download resume button-->
                                 <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-primary px-4 py-3" href="/assets/Doc/CV__Dany_Nahle.pdf" download>
+                                <a class="btn btn-primary px-4 py-3" href="/assets/Doc/CV__Dany_Nahle.pdf?v=100" download>
                                     <div class="d-inline-block bi bi-download me-2"></div>
                                     Download Resume
                                 </a>
@@ -64,7 +71,18 @@
                                                 <div class="small text-muted">Beirut, Lebanon</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Embarking on a new chapter in my career, I open the book of possibilities. Each page reveals a story of growth, challenges, and triumphs, as I author my path to success.</div></div>
+                                        <div class="col-lg-8">
+                                            <div>Currently architecting and delivering high-impact digital solutions for international initiatives. I specialize in building scalable Microservices and full-stack applications using .NET 8 and Blazor. My work focuses on transforming complex regional requirements into secure, high-performance platforms that support the UN's mission across the Arab region.
+                                            </div>
+                                            <div class="mt-3 d-flex flex-wrap gap-2">
+                                                <span class="badge bg-primary-soft text-primary rounded-pill py-2 px-3">.NET 8</span>
+                                                <span class="badge bg-primary-soft text-primary rounded-pill py-2 px-3">Microservices</span>
+                                                <span class="badge bg-primary-soft text-primary rounded-pill py-2 px-3">CQRS</span>
+                                                <span class="badge bg-primary-soft text-primary rounded-pill py-2 px-3">Docker</span>
+                                                <span class="badge bg-primary-soft text-primary rounded-pill py-2 px-3">Azure DevOps</span>
+                                                
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +98,18 @@
                                                 <div class="small text-muted">MTV Station, Beirut</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Throughout my career, I have had the privilege of working with Koein, a regional award-winning interactive agency and a renowned leader in crafting exceptional digital experiences. Being part of such a prestigious team has allowed me to hone my skills and deliver innovative solutions that have garnered recognition and praise.</div></div>
+                                        <div class="col-lg-8">
+                                            <div>Throughout my career, I have had the privilege of working with Koein, a regional award-winning interactive agency and a renowned leader in crafting exceptional digital experiences. Being part of such a prestigious team has allowed me to hone my skills and deliver innovative solutions that have garnered recognition and praise.
+                                            </div>
+                                            <div class="mt-3 d-flex flex-wrap gap-2">
+                                                <span class="badge bg-primary-soft text-primary rounded-pill py-2 px-3">ASP.NET MVC</span>
+                                                <span class="badge bg-primary-soft text-primary rounded-pill py-2 px-3">SQL Server</span>
+                                                <span class="badge bg-primary-soft text-primary rounded-pill py-2 px-3">Payment Gateways</span>
+                                                <span class="badge bg-primary-soft text-primary rounded-pill py-2 px-3">Technical SEO</span>
+                                                <span class="badge bg-primary-soft text-primary rounded-pill py-2 px-3">LINQ</span>
+                                            </div>
+                                        </div>                                  
+                                    
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +137,13 @@
                                         <div class="col-lg-8"><div>Intensive full stack web development program covering
                                             cloud architecture, front-and back-end development,
                                             source control, and web application security over 14
-                                            weeks of lectures, workshops, and projects.</div></div>
+                                            weeks of lectures, workshops, and projects.</div>
+                                            <div class="mt-3 d-flex flex-wrap gap-2">
+                                                <span class="badge bg-primary-soft text-secondary rounded-pill py-2 px-3">Full-Stack</span>
+                                                <span class="badge bg-primary-soft text-secondary rounded-pill py-2 px-3">JavaScript</span>
+                                                <span class="badge bg-primary-soft text-secondary rounded-pill py-2 px-3">Security</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -130,11 +165,78 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8"><div>Cisco certified (CCNA1, CCNA2, CCNA3, CISCO1)<br> Proficient in software design, development, and testing with tools like Visual Studio, Android Studio, and NetBeans.<br> Database management (MySQL, Firebase)<br> Strong Java programming skills, from fundamentals to advanced concepts; Interest in Artificial Intelligence, exploring reasoning and problem-solving techniques.</div></div>
+                                        <div class="col-lg-8">Proficient in software design, development, and testing with tools like Visual Studio, Android Studio, and NetBeans.<br> Database management (MySQL, Firebase)<br> Strong Java programming skills, from fundamentals to advanced concepts; Interest in Artificial Intelligence, exploring reasoning and problem-solving techniques.
+                                            <div class="mt-3 d-flex flex-wrap gap-2">
+                                                <span class="badge bg-primary-soft text-secondary rounded-pill py-2 px-3">Java</span>
+                                                <span class="badge bg-primary-soft text-secondary rounded-pill py-2 px-3">CCNA</span>
+                                                <span class="badge bg-primary-soft text-secondary rounded-pill py-2 px-3">MySQL</span>
+                                                <span class="badge bg-primary-soft text-secondary rounded-pill py-2 px-3">Firebase</span>
+                                                <span class="badge bg-primary-soft text-secondary rounded-pill py-2 px-3">Cisco certified (CCNA1, CCNA2, CCNA3, CISCO1)</span>
+
+                                            </div>
+                                        </div>
+                                        
+                                        
                                     </div>
                                 </div>
                             </div>
                         </section>
+                        <div class="pb-5"></div>
+                        <!-- Leadership-->
+                        <section>
+                            <h2 class="text-secondary fw-bolder mb-4">Leadership & Volunteer Experience</h2>
+                            
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2026 - Present</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">Toastmasters International</div>
+                                                    <div class="small text-muted">Protoast Club, Beirut</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Sergeant at Arms</div>
+                                                    <div class="small text-muted">Operations & Logistics</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>
+                                                Lead all operational logistics and technical configurations for weekly sessions and professional workshops. This includes managing the full setup of microphones, cameras, and presentation hardware to ensure seamless execution. Beyond technical duties, I manage venue relations by negotiating rental deals and monthly financial settlements with offices, libraries, and universities, while building a strategic network for future collaborative events.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                                <div class="text-secondary fw-bolder mb-2">2025 - 2025</div>
+                                                <div class="mb-2">
+                                                    <div class="small fw-bolder">Toastmasters International</div>
+                                                    <div class="small text-muted">Protoast Club, Beirut</div>
+                                                </div>
+                                                <div class="fst-italic">
+                                                    <div class="small text-muted">Vice President Membership</div>
+                                                    <div class="small text-muted">Community & Recruitment</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div>
+                                                Directed the club’s growth strategy by leading recruitment efforts and onboarding new members through clear communication of the program's professional benefits. I served as the primary liaison between the club and the local community, enhancing brand visibility and welcoming guests. Additionally, I managed internal relations through conflict resolution and collaborative strategic planning with the leadership team to ensure the club's long-term sustainability.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    
                         <!-- Divider-->
                         <div class="pb-5"></div>
                         <!-- Skills Section-->
@@ -142,75 +244,66 @@
                             <!-- Skillset Card-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
-                                    <!-- Professional skills list-->
+                                    
                                     <div class="mb-5">
                                         <div class="d-flex align-items-center mb-4">
                                             <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Expertise</span></h3>
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Statistical Analysis</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Network Security</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Full-Stack Development</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Microservices & CQRS</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">AI & LLM Integration</div></div>
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SEO/SEM Optimisation</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Code Quality</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User Interface Design</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Technical SEO</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Financial Systems</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CMS Architecture</div></div>
                                         </div>
                                     </div>
-                                    <!-- Languages list-->
+                            
                                     <div class="mb-5">
                                         <div class="d-flex align-items-center mb-4">
                                             <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Technical Stack</span></h3>
                                         </div>
+                                        
+                                        <h6 class="fw-bold text-primary mb-3">Backend</h6>
                                         <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
+                                            <div class="col mb-2"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">.NET 8/7/6 / Core</div></div>
+                                            <div class="col mb-2"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">C# / Web API / MVC</div></div>
+                                            <div class="col mb-2"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">EF Core / LINQ</div></div>
                                         </div>
+                            
+                                        <h6 class="fw-bold text-primary mb-3">Frontend & Mobile</h6>
                                         <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">C#</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Angular</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">ASP.NET MVC</div></div>
+                                            <div class="col mb-2"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Angular / Blazor / Razor</div></div>
+                                            <div class="col mb-2"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">TypeScript / jQuery / AJAX</div></div>
+                                            <div class="col mb-2"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">.NET MAUI (Cross-Platform)</div></div>
                                         </div>
+                            
+                                        <h6 class="fw-bold text-primary mb-3">Data & DevOps</h6>
                                         <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Entity Framework</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">LinQ</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">.NET Framework</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SQL Server</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MySQL</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Firebase</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">RESTful APIs</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">AJAX</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Azure DevOps</div></div>
-                                        </div>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">.Net Maui / Xamarin</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">.Net Core</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data Analytics Echart</div></div>
+                                            <div class="col mb-2"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SQL Server / PostgreSQL</div></div>
+                                            <div class="col mb-2"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Azure / Docker / Git</div></div>
+                                            <div class="col mb-2"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CI/CD / Azure DevOps</div></div>
                                         </div>
                                     </div>
-                                    <!-- believe list-->
+                            
                                     <div class="mb-0">
                                         <div class="d-flex align-items-center mb-4">
                                             <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-emoji-smile"></i></div>
                                             <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">I Believe in</span></h3>
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Concepts & Strategies</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Latest Technologies</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Functional Workflows</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Clean Architecture</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Scalable System Design</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Data Integrity</div></div>
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Impressive Design</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Timely Deliveries</div></div>
-                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Friendly Servicing</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Agile/Scrum Collaboration</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Unit Testing (xUnit)</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Strategic Problem Solving</div></div>
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +317,12 @@
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; DANY 2023</div></div>                 
+                    <div class="col-auto"><div class="small m-0 text-muted">Copyright &copy; Dani Nahle 2026</div></div>
+                    <div class="col-auto">
+                        <a class="text-gradient fs-4 me-3" href="https://linkedin.com/in/dani-nahle"><i class="bi-linkedin"></i></a>
+                        <a class="text-gradient fs-4 me-3" href="https://github.com/daninahle"><i class="bi-github"></i></a>
+                        <a class="text-gradient fs-4" href="mailto:dani.nahleh@gmail.com"><i class="bi-envelope-fill"></i></a>
+                    </div>
                 </div>
             </div>
         </footer>
